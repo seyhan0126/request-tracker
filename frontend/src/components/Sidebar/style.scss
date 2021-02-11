@@ -1,0 +1,124 @@
+.sidebar {
+    width: 14em;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(82,32,139,1) 35%, rgba(112,32,204,1) 100%);
+    transition: .5s;
+    padding: 0 1em;
+    overflow: hidden;
+    transform: translateX(100%);
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    label {
+        color: #ffffff;
+        text-shadow: 1px 1px #000000;
+    }
+
+    .closeFormButton {
+        position: absolute;
+        top: 0;
+        margin-top: 0.3em;
+        margin-left: 70%;
+        color: #ffffff;
+        cursor: pointer;
+        width: 5%;
+        font-size: 1.3em;
+        transition: .5s all;
+    }
+
+    .closeFormButton:hover {
+        color: #000000;
+    }
+}
+
+.sidebarShow {
+    z-index: 5;
+    transform: translateX(7%);
+}
+
+#sidebarForm {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    * {
+        // To clear the resizing effect on hover over element.
+        border-bottom: none ;
+    }
+
+    button {
+        background-color: #414141;
+        margin-top: 2em;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #4e4e4e;
+        box-shadow: none;
+    }
+
+    select, input[type='date'] {
+        cursor: pointer;
+    }
+
+    .error {
+        font-size: 0.8em;
+        text-shadow: 1px 1px #000000;
+        color: red;
+    }
+
+    .success {
+        font-size: 0.8em;
+        color: limegreen;
+    }
+
+    .error:nth-of-type(3) {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .sidebar {
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .sidebar {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar {
+        font-size: 0.54em;
+
+        button {
+            padding: 0.5em 2em;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        font-size: 0.36em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sidebar {
+        font-size: 0.1em;
+        width: 16%;
+
+        input {
+            font-size: 5px;
+        }
+    }
+}

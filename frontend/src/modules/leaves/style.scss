@@ -1,0 +1,18 @@
+.leaves-mainPanel {
+    display: flex;
+    height: 100vh;
+}
+
+.leaves-leftPanel {
+    width: 16%;
+    height: 100%;
+}
+
+.leaves-rightPanel {
+    width: 84%;
+}
+
+// Highlight the Requests from Navigation if the user is currently on the page.
+.leaves-leftPanel a:nth-of-type(2) {
+    background-color: #551d96;
+}

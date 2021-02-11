@@ -1,0 +1,24 @@
+.dashboard-mainPanel {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.dashboard-leftPanel {
+    width: 16%;
+}
+
+.dashboard-rightPanel {
+    width: 84%;
+}
+
+// Highlight the Dashboard in the menu if the user is located on it.
+.dashboard-leftPanel a:first-child {
+    background-color: #551d96;
+}
+
+@media only screen and (max-width: 1400px) {
+    .dashboard-leftPanel {
+        width: 15%;
+    }
+}

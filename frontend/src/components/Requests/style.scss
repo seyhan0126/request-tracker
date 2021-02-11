@@ -1,0 +1,95 @@
+.container-datatable {
+    height: 100vh;
+
+    .datatable {
+        width: 100%;
+        overflow: scroll;
+        font-family: 'Poppins', sans-serif;
+        height: 100%;
+
+        table {
+            float: right;
+            width: 99%;
+            border-collapse: collapse;
+            user-select: none;
+        }
+
+        th {
+            color: rgb(255, 255, 255);
+            background-color: rgb(80, 80, 80);
+        }
+        
+        table, th, td {
+            border: 1px solid white;
+        }
+
+        tr {
+            transition: .35s all;
+        }
+
+        tr:hover {
+            transition: .35s all;
+            background-color: #8d2efa;
+        }
+    }
+}
+
+.datatable-upperPanel {
+    padding: 1%;
+    width: 100%;
+    border-right: 1px dotted black;
+}
+
+.datatable-bottomPanel {
+    padding: 1%;
+    width: 75%;
+}
+
+#filterInput {
+    width: 40%;
+    font-size: 1.5em;
+    padding: 0px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.RequestsTable-paper-2 {
+    border: none !important;
+    border-radius: 5px;
+    outline: none;
+}
+
+.RequestsTable-modalButtons-5 {
+    Button {
+        background-color: #414141;
+        cursor: pointer;
+    }
+
+    Button:hover {
+        background-color: #4e4e4e;
+        box-shadow: none;
+    }
+}
+
+.error {
+    padding: 2px;
+    font-size: 0.8em;
+    color: red;
+}
+
+.success {
+    padding: 2px;
+    font-size: 0.8em;
+    color: #414141;
+}
+
+@media only screen and (max-width: 1000px) {
+    .datatable {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .datatable {
+        font-size: 0.3em;
+    }
+}
